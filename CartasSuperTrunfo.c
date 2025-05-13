@@ -5,6 +5,9 @@ int main() {
     
     // Definindo as variáveis separadas para cada atributo da cidade 1;
 
+    int populacao2, npontosturisticos2;
+    float area2, PIB2;
+    char estado2[20], codigodacarta2[20], nomedacidade2[20];
     int populacao1, npontosturisticos1;
     float area1, PIB1;
     char estado1[20], codigodacarta1[20], nomedacidade1[20];
@@ -31,28 +34,8 @@ int main() {
     printf(" Digite o número de pontos Turísticos: \n");
     scanf("%d", npontosturisticos1);
         
-    // Exibindo os dos Dados das Cartas, um por linha,  utilizando a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    printf("Carta 01:\n");
+   // Definindo as variáveis separadas para cada atributo da cidade 2;
 
-    printf("Estado:%s\n", estado1);
-
-    printf("Código:%s\n", codigodacarta1);
-
-    printf("Nome da Cidade:%s\n", nomedacidade1);
-
-    printf("População:%d\n", populacao1);
-
-    printf("Área:%f\n", area1);
-
-    printf("PIB:%f\n", PIB1);
-
-    printf("Número de Pontos Turísticos:%d\n", npontosturisticos1);
-
-    // Definindo as variáveis separadas para cada atributo da cidade 2;
-
-    int populacao2, npontosturisticos2;
-    float area2, PIB2;
-    char estado2[20], codigodacarta2[20], nomedacidade2[20];
       
     // Cadastrando as Cartas, utilizando a função scanf para a captura das entradas do usuário para cada atributo da carta;
     printf("Digite o nome do Estado: \n");
@@ -75,7 +58,24 @@ int main() {
 
     printf(" Digite o número de pontos Turísticos: \n");
     scanf("%d", npontosturisticos2);
-        
+    
+     // Exibindo os dos Dados das Cartas, um por linha,  utilizando a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
+    printf("Carta 01:\n");
+
+    printf("Estado:%s\n", estado1);
+
+    printf("Código:%s\n", codigodacarta1);
+
+    printf("Nome da Cidade:%s\n", nomedacidade1);
+
+    printf("População:%d\n", populacao1);
+
+    printf("Área:%f\n", area1);
+
+    printf("PIB:%f\n", PIB1);
+
+    printf("Número de Pontos Turísticos:%d\n", npontosturisticos1);
+
     // Exibindo os dos Dados das Cartas, um por linha,  utilizando a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     printf("Carta 02:\n");
 
