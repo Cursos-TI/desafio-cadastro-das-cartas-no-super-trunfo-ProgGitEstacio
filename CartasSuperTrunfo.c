@@ -48,10 +48,6 @@ int main() {
 
     printf("Número de Pontos Turísticos:%d\n", npontosturisticos1);
 
-    return 0;
- }
-
-    int main () {
     // Definindo as variáveis separadas para cada atributo da cidade 2;
 
     int populacao2, npontosturisticos2;
