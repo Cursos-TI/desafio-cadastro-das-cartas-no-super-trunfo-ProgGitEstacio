@@ -14,7 +14,8 @@ int main() {
     float quociente = populacao1 / area1;
     float quociente1 = PIB1 / populacao1;
     float quociente2 = populacao2 / area2;
-    float quociente3 = PIB2 / populacao2; // divisão de ponto flutuante
+    float quociente3 = PIB2 / populacao2; 
+    // divisão de ponto flutuante
   
     // Cadastrando as Cartas, utilizando a função scanf para a captura das entradas do usuário para cada atributo da carta;
     printf("Digite o nome do Estado: \n");
