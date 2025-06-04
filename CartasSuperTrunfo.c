@@ -5,16 +5,20 @@ int main() {
     
     // Definindo as variáveis separadas para cada atributo da cidade 1;
 
-    int populacao1, npontosturisticos1;
-    float area1, PIB1;
+    int populacao1;
+    int npontosturisticos1;
+    float area1;
+    float PIB1;
     char estado1[20], codigodacarta1[20], nomedacidade1[20];
-    int populacao2, npontosturisticos2;
-    float area2, PIB2;
+    int populacao2; 
+    int npontosturisticos2;
+    float area2;
+    float PIB2;
     char estado2[20], codigodacarta2[20], nomedacidade2[20];
-    float quociente = populacao1 / area1;
-    float quociente1 = PIB1 / populacao1;
-    float quociente2 = populacao2 / area2;
-    float quociente3 = PIB2 / populacao2; 
+    float quociente1 = populacao1 / area1;
+    float quociente2 = PIB1 / populacao1;
+    float quociente3 = populacao2 / area2;
+    float quociente4 = PIB2 / populacao2; 
     // divisão de ponto flutuante
   
     // Cadastrando as Cartas, utilizando a função scanf para a captura das entradas do usuário para cada atributo da carta;
@@ -70,8 +74,8 @@ int main() {
     printf("Área:%f\n", area1);
     printf("PIB:%f\n", PIB1);
     printf("Número de Pontos Turísticos:%d\n", npontosturisticos1);
-    printf("Densidade populacional:%.2f\n", quociente);
-    printf("Pib per Capta:%.2f\n", quociente1);
+    printf("Densidade populacional:%.2f hab/km2\n", quociente1);
+    printf("Pib per Capta:%.2f reais\n", quociente2);
 
     printf("Carta 02:\n");
     printf("Estado:%s\n", estado2);
@@ -81,8 +85,8 @@ int main() {
     printf("Área:%f\n", area2);
     printf("PIB:%f\n", PIB2);
     printf("Número de Pontos Turísticos:%d\n", npontosturisticos2);
-    printf("Densidade populacional:%.2f\n", quociente2);
-    printf("Pib per Capta:%.2f\n", quociente3);
+    printf("Densidade populacional:%.2f hab/km2\n", quociente3);
+    printf("Pib per Capta:%.2f reais\n", quociente4);
 
     return 0;
  }
