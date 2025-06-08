@@ -15,19 +15,20 @@ int main() {
     float area2;
     float PIB2;
     char estado2[20], codigodacarta2[20], nomedacidade2[20], carta2[20];
+    float ResultadoPIB, Resultadopopulacao, Resultadonpontosturisticos, Resultadoarea, Resultadoquociente1, Resultadoquociente2, ResultadoSuperPoder;
     float quociente1 = populacao1 / area1;
     float quociente2 = PIB1 / populacao1;
     float quociente3 = populacao2 / area2;
     float quociente4 = PIB2 / populacao2;
     float SuperPoder1 = (populacao1 + PIB1 + npontosturisticos1 + area1 + quociente1 + quociente2);
     float SuperPoder2 = (populacao2 + PIB2 + npontosturisticos2 + area2 + quociente3 + quociente4);
-    float ResultadoPIB = PIB1 > PIB2;
-    float Resultadopopulacao = populacao1 > populacao2;
-    float Resultadonpontosturisticos = npontosturisticos1 > npontosturisticos2;
-    float Resultadoarea = area1 > area2;
-    float Resultadoquociente1 = quociente1 < quociente3;
-    float Resultadoquociente2 = quociente2 > quociente4;
-    float ResultadoSuperPoder = SuperPoder1 > SuperPoder2;
+    ResultadoPIB = PIB1 > PIB2;
+    Resultadopopulacao = populacao1 > populacao2;
+    Resultadonpontosturisticos = npontosturisticos1 > npontosturisticos2;
+    Resultadoarea = area1 > area2;
+    Resultadoquociente1 = quociente1 < quociente3;
+    Resultadoquociente2 = quociente2 > quociente4;
+    ResultadoSuperPoder = SuperPoder1 > SuperPoder2;
 
     // Cadastrando as Cartas, utilizando a função scanf para a captura das entradas do usuário para cada atributo da carta;
     printf("Digite o nome do Estado: \n");
@@ -98,13 +99,13 @@ int main() {
     // Comparação entre as cartas
 
     printf("Comparação entre as cartas:\n");
-    printf("População: Carta%d venceu\n", carta1, carta2, Resultadopopulacao);
-    printf("PIB: Carta%d venceu\n", carta1, carta2, ResultadoPIB);
-    printf("Pontos Turísticos: Carta%d venceu\n", carta1, carta2, Resultadonpontosturisticos);
-    printf("Área: Carta%d venceu\n", carta1, carta2, Resultadoarea);
-    printf("Densidade Populacional: Carta%d venceu\n", carta1, carta2, Resultadoquociente1);
-    printf("PIB per Capta: Carta%d venceu\n", carta1, carta2, Resultadoquociente2);
-    printf("SuperPoder: Carta%d venceu\n", carta1, carta2, ResultadoSuperPoder);
+    printf("População: Carta:%s venceu:%d\n", carta1, carta2, Resultadopopulacao);
+    printf("PIB: Carta%s venceu:%d\n", carta1, carta2, ResultadoPIB);
+    printf("Pontos Turísticos: Carta%s venceu%d\n", carta1, carta2, Resultadonpontosturisticos);
+    printf("Área: Carta%s venceu:%d\n", carta1, carta2, Resultadoarea);
+    printf("Densidade Populacional: Carta%s venceu:%d\n", carta1, carta2, Resultadoquociente1);
+    printf("PIB per Capta: Carta%s venceu: %d\n", carta1, carta2, Resultadoquociente2);
+    printf("SuperPoder: Carta%s venceu:%d\n", carta1, carta2, ResultadoSuperPoder);
 
     return 0;
  }
