@@ -41,7 +41,7 @@ int main() {
     scanf ("%s", &nomedacidade1);
 
     printf("Digite a população da cidade: \n");
-    scanf("%u", &populacao1);
+    scanf("%lu", &populacao1);
 
     printf("Digite a área da cidade: \n");
     scanf("%f", &area1);
@@ -62,7 +62,7 @@ int main() {
     scanf ("%s", &nomedacidade2);
 
     printf("Digite a população da cidade: \n");
-    scanf("%u", &populacao2);
+    scanf("%lu", &populacao2);
 
     printf("Digite a área da cidade: \n");
     scanf("%f", &area2);
@@ -99,13 +99,13 @@ int main() {
     // Comparação entre as cartas
 
     printf("Comparação entre as cartas:\n");
-    printf("População: Carta:%s venceu:%d\n", carta1, carta2, Resultadopopulacao);
-    printf("PIB: Carta%s venceu:%d\n", carta1, carta2, ResultadoPIB);
-    printf("Pontos Turísticos: Carta%s venceu%d\n", carta1, carta2, Resultadonpontosturisticos);
-    printf("Área: Carta%s venceu:%d\n", carta1, carta2, Resultadoarea);
-    printf("Densidade Populacional: Carta%s venceu:%d\n", carta1, carta2, Resultadoquociente1);
-    printf("PIB per Capta: Carta%s venceu: %d\n", carta1, carta2, Resultadoquociente2);
-    printf("SuperPoder: Carta%s venceu:%d\n", carta1, carta2, ResultadoSuperPoder);
+    printf("População: Carta1 venceu:%d\n", Resultadopopulacao);
+    printf("PIB: Carta1 venceu:%d\n", ResultadoPIB);
+    printf("Pontos Turísticos: Carta1 venceu:%d\n", Resultadonpontosturisticos);
+    printf("Área: Carta1 venceu:%d\n", Resultadoarea);
+    printf("Densidade Populacional: Carta1 venceu:%d\n", Resultadoquociente1);
+    printf("PIB per Capta: Carta1 venceu:%d\n", Resultadoquociente2);
+    printf("SuperPoder: Carta1 venceu:%d\n", ResultadoSuperPoder);
 
     return 0;
  }
