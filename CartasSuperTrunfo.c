@@ -99,13 +99,13 @@ int main() {
     // Comparação entre as cartas
 
     printf("Comparação entre as cartas:\n");
-    printf("População: Carta1 venceu:%d\n", Resultadopopulacao);
-    printf("PIB: Carta1 venceu:%d\n", ResultadoPIB);
-    printf("Pontos Turísticos: Carta1 venceu:%d\n", Resultadonpontosturisticos);
-    printf("Área: Carta1 venceu:%d\n", Resultadoarea);
-    printf("Densidade Populacional: Carta1 venceu:%d\n", Resultadoquociente1);
-    printf("PIB per Capta: Carta1 venceu:%d\n", Resultadoquociente2);
-    printf("SuperPoder: Carta1 venceu:%d\n", ResultadoSuperPoder);
+    printf("População: Carta1 venceu:%f\n", Resultadopopulacao);
+    printf("PIB: Carta1 venceu:%f\n", ResultadoPIB);
+    printf("Pontos Turísticos: Carta1 venceu:%f\n", Resultadonpontosturisticos);
+    printf("Área: Carta1 venceu:%f\n", Resultadoarea);
+    printf("Densidade Populacional: Carta1 venceu:%f\n", Resultadoquociente1);
+    printf("PIB per Capta: Carta1 venceu:%f\n", Resultadoquociente2);
+    printf("SuperPoder: Carta1 venceu:%f\n", ResultadoSuperPoder);
 
     return 0;
  }
