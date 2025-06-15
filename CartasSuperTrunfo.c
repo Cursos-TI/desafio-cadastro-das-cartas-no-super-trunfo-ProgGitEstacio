@@ -1,5 +1,6 @@
 #include <stdio.h>
-
+#include <stdlib.h>
+#include <time.h>
 
 int main() {
     
@@ -29,7 +30,9 @@ int main() {
     Resultadoquociente1 = quociente1 < quociente3;
     Resultadoquociente2 = quociente2 > quociente4;
     ResultadoSuperPoder = SuperPoder1 > SuperPoder2;
-
+    float Resultado1, Resultado2;
+    char primeiroatributo, segundoatributo;
+    
     // Cadastrando as Cartas, utilizando a função scanf para a captura das entradas do usuário para cada atributo da carta;
     printf("Digite o nome do Estado: \n");
     scanf("%s", &estado1);
@@ -106,6 +109,107 @@ int main() {
     printf("Densidade Populacional: Carta1 venceu:%f\n", Resultadoquociente1);
     printf("PIB per Capta: Carta1 venceu:%f\n", Resultadoquociente2);
     printf("SuperPoder: Carta1 venceu:%f\n", ResultadoSuperPoder);
+    
+    // geração de atributos aleatórios
+    srand(time(0));
+    populacao1 = 1; // rand() % 100 + 1; número entre 1 e 100;
+    populacao2 = 0; // rand() % 100 + 1; número entre 1 e 100;
+    PIB1 = 1; // rand() % 100 + 1; número entre 1 e 100;
+    PIB2 = 0; // rand() % 100 + 1; número entre 1 e 100;
+    npontosturisticos1 = 1; // rand() % 100 + 1; número entre 1 e 100;
+    npontosturisticos2 = 0; // rand() % 100 + 1; número entre 1 e 100;
+    area1 = 1; // rand() % 100 + 1; número entre 1 e 100
+    area2 = 0; // rand() % 100 + 1; número entre 1 e 100;
+    
+    // Menu interativo
+    printf("Bem-vindo ao Super Trunfo!\n");
+    printf("Escolha o primeiro atributo de comparação.\n");
+    printf("P. PIB\n");
+    printf("Po. População\n");
+    printf("N. Nº Pontos Turísticos\n");
+    printf("A. Área\n");
+
+    printf("Escolha a comparação: \n");
+    scanf("%c", &primeiroatributo);
+    
+    switch (primeiroatributo)
+    {
+    case 'P':
+    case 'p':
+        printf("Você escolheu a opção PIB!\n");
+        Resultado1 = PIB1 > PIB2 ? 1 : 0;
+        break;
+    case 'Po':
+    case 'po':
+        printf("Você escolheu a opção População!\n");
+        Resultado1 = populacao1 > populacao2 ? 1 : 0;
+        break;
+    case 'N':
+    case 'n':
+        printf("Você escolheu a opção Nº Pontos Turísticos!\n");
+        Resultado1 = npontosturisticos1 > npontosturisticos2 ? 1 : 0;
+        break;
+    case 'A':
+    case 'a':
+        printf("Você escolheu a opção Área!\n");
+        Resultado1 = area1 > area2 ? 1 : 0;
+        break;
+
+        default:
+    printf("Opção de Jogo inválida!\n");
+    break;
+    }
+    printf("Escolha o segundo atributo de comparação.\n");
+    printf("Atenção: Você deve escolher um atributo diferente do primeiro.\n");
+    printf("P. PIB\n");
+    printf("Po. População\n");
+    printf("N. Nº Pontos Turísticos\n");
+    printf("A. Área\n");
+
+    printf("Escolha a comparação: ");
+    scanf(" %c", &segundoatributo);
+    
+    if (primeiroatributo == segundoatributo)
+    {
+         printf("Você escolheu o mesmo atributo!");
+    } else {
+        switch (segundoatributo)
+        {
+    case 'P':
+    case 'p':
+        printf("Você escolheu a opção PIB!\n");
+        Resultado2 = PIB1 > PIB2 ? 1 : 0;
+        break;
+    case 'Po':
+    case 'po':
+        printf("Você escolheu a opção População!\n");
+        Resultado2 = populacao1 > populacao2 ? 1 : 0;
+        break;
+    case 'N':
+    case 'n':
+        printf("Você escolheu a opção Nº Pontos Turísticos!\n");
+        Resultado2 = npontosturisticos1 > npontosturisticos2 ? 1 : 0;
+        break;
+    case 'A':
+    case 'a':
+        printf("Você escolheu a opção Área!\n");
+        Resultado2 = area1 > area2 ? 1 : 0;
+        break;
+    default:
+    printf("Opção de Jogo inválida!\n");
+    break;
+    }
+    if (Resultado1 && Resultado2)
+    {
+        printf("Parabéns, você venceu!");
+
+    } else if (Resultado1 != Resultado2)
+    {
+        printf("Empatou!\n");
+    } else { 
+        printf("Infelizmente, você perdeu!\n");
+    }
 
     return 0;
  }
+}
